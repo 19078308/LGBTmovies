@@ -1,0 +1,52 @@
+
+.movieCard {
+  padding-top: 20px;
+  margin-top: 100px;
+}
+
+.card-deck{
+  float: inline-start;
+  padding: 10px;
+}
+
+.cartTable{
+  padding-top: 20px;
+  padding-left: 40px;
+  margin-top: 100px;
+}
+.shoppingCart{
+  padding-top: 20px;
+  padding-left: 40px;
+  margin-top: 100px;
+}
+
+.btnShow{
+  background-color: white;
+  color: rgb(255, 174, 0);
+  margin: 2px black;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border:  rgb(128, 83, 0);
+}
+
+.btnAdd{
+  background-color: rgb(128, 83, 0);
+  color: white;
+  margin: rgb(128, 62, 0);
+  border:  rgb(128, 83, 0);
+}
+
+body {
+  background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, purple);
+  }
+
+.card{
+  background-color: #eff0d6;
+
+}
+
+p1{
+  background:  -webkit-linear-gradient(red, orange, yellow, green, blue,purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

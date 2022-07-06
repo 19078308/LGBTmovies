@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Movies</title>
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+   <link rel="stylesheet" href="Movies.css">
+
+</head>
+
+<body onload="Moviespage()">
+   <header >
+      <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+         <a class="navbar-brand" href="Movies.html">
+            <img src="images/lgbtqIcon.jpg" width="45" height="45" alt="">
+         </a>
+         <a class="navbar-brand" href="Movies.html">
+            <p1 class="titleTag">LGBTQMovies</p1>
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavbar">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="collapseNavbar">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a class="nav-link navbar-right" href="Cart.html">
+                     <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                  </a>
+               </li>
+               <li class="nav-item active">
+                  <p1 id="cartItems"></p1>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+
+   <div class="container-fluid padding movieCard">
+      <h1>Movies</h1>
+      <div class="card-deck">
+         <!--Movie 1-->
+
+         <div class="card-deck top col-sm-12 col-lg-3 col-md-4 col-md-6" id="1movie">
+            <div class="card">
+               <div class="card-header" id="cinema1"></div>
+               <img id="pic1" class="card-img-top" width="200" height="350" alt="no image">
+               <div class="card-body">
+                  <h5 class="card-title" id="Title1"></h5>
+                  <p class="card-text" id="description1"></p>
+               </div>
+               <p class="card-text text-right prices" id="price1"></p>
+               <div class="card-footer">
+                  <button type="button" class="btn btn-primary btnShow" value="Show Details" id="show1"
+                     data-toggle="modal" data-target="#myModal1">Show Details</button><br>
+                  <!--Modal-->
+                  <div class="modal fade" id="myModal1" role="dialog">
+                     <div class="modal-dialog modal-md">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title" id="movieChosen1"></h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-body">
+                              <p class="font-weight-bold float-left">Title: <span class="font-weight-normal"
+                                    id="ttlModal1"></span></p><br><br>
+                              <p class="font-weight-bold float-left">Director: <span class="font-weight-normal"
+                                    id="directModal1"></span></p><br><br>
+                              <p class="font-weight-bold float-left">Release Year: <span class="font-weight-normal"
+                                    id="yrModal1"></span></p><br><br>
+                              <p class="font-weight-bold float-left">Runtime: <span class="font-weight-normal"
+                                    id="runModal1"></span></p><br><br>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <button type="button" class="btn btn-primary btnAdd" id="Booking1" value="BOOK TICKET">book
+                     ticket</button>
+               </div>
+            </div>
+         </div>
+
+         <!--Movie 2-->
+         <div class="card-deck top col-sm-12 col-lg-3 col-md-4 col-md-6" id="2movie">
+            <div class="card" id="cards">
+               <div class="card-header" id="cinema2"></div>
+               <img id="pic2" class="card-img-top" width="200" height="350" alt="">
+               <div class="card-body">
+                  <h5 class="card-title" id="title2"></h5>
+                  <p class="card-text" id="description2"></p>
+               </div>
+               <p class="card-text text-right  prices" id="price2"></p>
+               <div class="card-footer">
+                  <button type="button" id="show2" class="btn btn-primary btnShow" data-toggle="modal" data-target="#myModal2"
+                     >Show Details</button><br>
+
+                  <!--Modal-->
+                  <div class="modal fade" id="myModal2" role="dialog">
+                     <div class="modal-dialog modal-md">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title" id="movieChosen2"></h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-body">
+                              <p class="font-weight-bold float-left">Title: <span class="font-weight-normal" id="ttlModal2"></span></p><br><br>
+                              <p class="font-weight-bold float-left">Director: <span class="font-weight-normal" id="directModal2"></span></p>
+                              <br><br>
+                              <p class="font-weight-bold float-left">Release Year: <span class="font-weight-normal" id="yrModal2"></span></p>
+                              <br><br>
+                              <p class="font-weight-bold float-left">Runtime: <span class="font-weight-normal" id="runModal2"></span></p><br><br>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button type="button" class="btn btn-primary btnAdd" id="Booking2" value="BOOK TICKET">Book
+                     ticket</button>
+               </div>
+            </div>
+         </div>
+
+
+
+         <!--Movie 3-->
+         <div class="card-deck top col-sm-12 col-lg-3 col-md-4 col-md-6" id="3movie">
+            <div class="card">
+               <div class="card-header" id="cinema3"></div>
+               <img id="pic3" class="card-img-top" width="200" height="350" alt="">
+               <div class="card-body">
+                  <h5 class="card-title" id="title3"></h5>
+                  <p class="card-text" id="description3"></p>
+               </div>
+               <p class="card-text text-right  prices" id="price3"></p>
+               <div class="card-footer">
+                  <button type="button" id="show3" class="btn btn-primary btnShow" data-toggle="modal"
+                     data-target="#myModal3">Show Details</button><br>
+
+                  <!--Modal-->
+                  <div class="modal fade" id="myModal3" role="dialog">
+                     <div class="modal-dialog modal-md">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title" id="movieChosen3"></h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-body">
+                              <p class="font-weight-bold float-left">Title: <span class="font-weight-normal" id="ttlModal3"></span></p><br><br>
+                              <p class="font-weight-bold float-left">Director: <span class="font-weight-normal" id="directModal3"></span></p>
+                              <br><br>
+                              <p class="font-weight-bold float-left">Release Year: <span class="font-weight-normal" id="yrModal3"></span></p>
+                              <br><br>
+                              <p class="font-weight-bold float-left">Runtime: <span class="font-weight-normal" id="runModal3"></span></p><br><br>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <button type="button" class="btn btn-primary btnAdd" id="Booking3" value="BOOK TICKET">Book
+                     ticket</button>
+               </div>
+            </div>
+         </div>
+
+
+         <!--Movie 4-->
+         <div class="card-deck top col-sm-12 col-lg-3 col-md-4 col-md-6" id="4movie">
+            <div class="card">
+               <div class="card-header" id="cinema4"></div>
+               <img id="pic4" class="card-img-top" width="200" height="350" alt="">
+               <div class="card-body">
+                  <h5 class="card-title" id="title4"></h5>
+                  <p class="card-text" id="description4"></p>
+               </div>
+               <p class="card-text text-right  prices" id="price4"></p>
+               <div class="card-footer">
+                  <button type="button" id="show4" class="btn btn-primary btnShow" data-toggle="modal"
+                     data-target="#myModal4">Show Details</button><br>
+
+                  <div class="modal fade" id="myModal4" role="dialog">
+                     <div class="modal-dialog modal-md">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                           <div class="modal-header">
+                              <h4 class="modal-title" id="movieChosen4"></h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                           </div>
+                           <div class="modal-body">
+                              <p class="font-weight-bold float-left">Title: <span class="font-weight-normal" id="ttlModal4"></span></p><br><br>
+                              <p class="font-weight-bold float-left">Director: <span class="font-weight-normal" id="directModal4"></span></p>
+                              <br><br>
+                              <p class="font-weight-bold float-left">Release Year: <span class="font-weight-normal" id="yrModal4"></span></p>
+                              <br><br>
+                              <p class="font-weight-bold float-left">Runtime: <span class="font-weight-normal" id="runModal4"></span></p><br><br>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button type="button" class="btn btn-primary btnAdd" id="Booking4" value="BOOK TICKET">Book
+                     ticket</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="javascript/bootstrap.js"></script>
+   <script src="script.js"></script>
+</body>
+
+</html>
